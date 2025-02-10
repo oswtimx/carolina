@@ -142,7 +142,6 @@ main {
   }
 }
 
-
 .heart {
   display: none;
   position: absolute;
@@ -166,4 +165,9 @@ main {
     opacity: 0;
 
   }
+}
+
+/* estilos para negritas */
+strong {
+  font-weight: bold;
 }
