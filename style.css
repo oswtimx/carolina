@@ -172,12 +172,11 @@ strong {
   text-transform: uppercase;
   text-align: center;
   color: #FF3335;
-  opacity: 0;
-  transform: scale(0.8);
-  animation: aparecer 1.5s ease-out forwards;
+  text-shadow: 0 0 5px rgba(255, 51, 53, 0.5);
+  animation: brilloSuave 3s infinite alternate;
 }
 
-@keyframes aparecer {
-  0% { opacity: 0; transform: scale(0.8); }
-  100% { opacity: 1; transform: scale(1); }
+@keyframes brilloSuave {
+  0% { text-shadow: 0 0 5px rgba(255, 51, 53, 0.5); }
+  100% { text-shadow: 0 0 15px rgba(255, 51, 53, 1); }
 }
