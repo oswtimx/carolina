@@ -165,3 +165,32 @@ strong {
   text-transform: uppercase;
   text-align: center;
 }
+/* Estilos generales */
+body {
+  background-color: #fad7df;
+}
+
+.paper {
+  display: flex; /* Usamos flexbox para alinear los elementos en línea */
+  align-items: center; /* Alineamos verticalmente */
+  gap: 1rem; /* Espacio entre el texto y la imagen */
+  line-height: 2rem;
+  padding: 1.5rem;
+  background: white;
+  width: 390px;
+  height: 180px;
+  text-align: center;
+}
+
+.dynamic-image {
+  width: 40px; /* Puedes ajustar el tamaño de la imagen */
+  height: 40px;
+  object-fit: cover; /* Hace que la imagen se ajuste bien */
+  border-radius: 50%; /* Hace la imagen redonda si es necesario */
+  transition: transform 1s ease;
+}
+
+/* Efecto al pasar el mouse sobre la imagen */
+.dynamic-image:hover {
+  transform: scale(1.2); /* Aumenta el tamaño de la imagen cuando el mouse pasa sobre ella */
+}
