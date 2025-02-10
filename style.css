@@ -171,3 +171,10 @@ main {
 strong {
   font-weight: bold;
 }
+.titulo {
+  font-size: 4rem;
+  font-style: italic;
+  color: #fad7df;
+  text-transform: uppercase;
+  text-align: center;
+}
