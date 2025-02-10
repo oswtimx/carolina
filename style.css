@@ -131,7 +131,6 @@ main {
   }
 }
 
-/* Animación para la paloma */
 .paloma {
   display: none;
   position: absolute;
@@ -140,47 +139,16 @@ main {
   margin: auto;
   font-size: 3rem;
   color: #fe3334;
-  animation: crecerPaloma 1s forwards;
+  animation: crecer 1s forwards;
 }
 
-/* Diseño de la paloma con CSS */
-.paloma {
-  width: 25px;
-  height: 25px;
-  background-color: #fe3334;
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  position: relative;
-}
-
-.paloma::before {
-  content: '';
-  width: 10px;
-  height: 10px;
-  background-color: #fe3334;
-  position: absolute;
-  top: -5px;
-  left: 50%;
-  transform: translateX(-50%) rotate(45deg);
-}
-
-.paloma::after {
-  content: '';
-  width: 20px;
-  height: 10px;
-  background-color: #fe3334;
-  position: absolute;
-  bottom: -5px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-@keyframes crecerPaloma {
+@keyframes crecer {
   0% {
-    transform: scale(1);
+    scale: 1;
     opacity: 1;
   }
   100% {
-    transform: scale(3);
+    scale: 3;
     opacity: 0;
   }
 }
@@ -190,11 +158,10 @@ strong {
   font-weight: bold;
 }
 
-/* Estilo para el título */
 .titulo {
   font-size: 4rem;
   font-style: italic;
-  color: #FF3335;
+  color: #fad7df;
   text-transform: uppercase;
   text-align: center;
 }
