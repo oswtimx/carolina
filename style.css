@@ -171,15 +171,12 @@ strong {
   font-style: italic;
   text-transform: uppercase;
   text-align: center;
-  background: linear-gradient(45deg, #FF3335, #ff9800, #ff33cc, #33ccff);
-  background-size: 400% 400%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: cambioColor 3s infinite linear;
+  color: #FF3335;
+  text-shadow: 0 0 5px #FF3335, 0 0 10px #FF6666, 0 0 15px #FF9999;
+  animation: brillo 1.5s infinite alternate;
 }
 
-@keyframes cambioColor {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+@keyframes brillo {
+  0% { text-shadow: 0 0 5px #FF3335, 0 0 10px #FF6666, 0 0 15px #FF9999; }
+  100% { text-shadow: 0 0 10px #FF6666, 0 0 15px #FF9999, 0 0 20px #FFCCCC; }
 }
