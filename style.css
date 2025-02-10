@@ -172,12 +172,22 @@ strong {
   text-transform: uppercase;
   text-align: center;
   color: #FF3335;
-  opacity: 0;
-  transform: translateY(30px);
-  animation: deslizarElegante 1.5s ease-out forwards;
+  position: relative;
+  overflow: hidden;
 }
 
-@keyframes deslizarElegante {
-  0% { opacity: 0; transform: translateY(30px); }
-  100% { opacity: 1; transform: translateY(0); }
+.titulo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+  animation: destelloLujo 2.5s infinite;
+}
+
+@keyframes destelloLujo {
+  0% { left: -100%; }
+  100% { left: 100%; }
 }
