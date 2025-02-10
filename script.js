@@ -1,17 +1,3 @@
-// read custom message from query strings
-// Tutorial -> https://youtu.be/6ojp1iWUKw8
-
-const urlSearchParams = new URLSearchParams(window.location.search);
-
-const messageCustom = urlSearchParams.get('message');
-
-if (messageCustom) {
-  const mainMessageElement = document.querySelector('#mainMessage');
-  mainMessageElement.textContent = decodeURI(messageCustom);
-}
-
-// the tutorial starts here
-
 const btnOpenElement = document.querySelector('#open');
 const btnCloseElement = document.querySelector('#close');
 
@@ -25,12 +11,11 @@ btnOpenElement.addEventListener('click', () => {
 
   setTimeout(() => {
     coverElement.style.zIndex = -1;
-
     const paperElement = document.querySelector('.paper');
     paperElement.classList.remove('close-paper');
     paperElement.classList.add('open-paper');
 
-    // animacion de la paloma
+    // Animación de la paloma
     const palomaElement = document.querySelector('.paloma');
     palomaElement.style.display = 'block';
   }, 500);
@@ -49,7 +34,7 @@ btnCloseElement.addEventListener('click', () => {
     coverElement.style.zIndex = 0;
     coverElement.classList.remove('open-cover');
 
-    // animacion de la paloma
+    // Ocultar la paloma
     const palomaElement = document.querySelector('.paloma');
     palomaElement.style.display = 'none';
   }, 500);
