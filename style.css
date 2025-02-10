@@ -132,7 +132,8 @@ main {
   }
 }
 
-.heart {
+/* Estilo para la paloma */
+.paloma {
   display: none;
   position: absolute;
   top: 25%;
@@ -163,7 +164,7 @@ strong {
 .titulo {
   font-size: 4rem;
   font-style: italic;
-  color: #fad7df;
+  color: #FF3335;
   text-transform: uppercase;
   text-align: center;
 }
