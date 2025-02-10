@@ -1,4 +1,4 @@
-/* reset css */
+/* Reset CSS */
 * {
   min-width: 0;
   font: inherit;
@@ -23,17 +23,7 @@ body {
   min-height: 100dvh;
 }
 
-h1,
-h2,
-h3 {
-  text-wrap: balance;
-}
-
-p {
-  text-wrap: pretty;
-}
-
-/* styles */
+/* Estilos Generales */
 body {
   background-color: #fad7df;
 }
@@ -47,134 +37,38 @@ main {
   height: 100vh;
 }
 
-.container-letter {
-  position: relative;
-}
-
-.cover {
-  position: absolute;
-  border-left: 200px solid transparent;
-  border-right: 200px solid transparent;
-  border-top: 100px solid #fe3334;
-  border-bottom: 100px solid transparent;
-  transition: transform .75s;
-  transform-origin: top;
-}
-
-.paper {
-  position: absolute;
-  padding: 1.5rem;
-  line-height: 2rem;
-  right: 5px;
-  z-index: -1;
-  background: white;
-  width: 390px;
-  height: 180px;
-  transition: all .75s;
-  text-align: center;
-}
-
-.letter {
-  border-left: 200px solid #ff989e;
-  border-right: 200px solid #ff989e;
-  border-top: 100px solid transparent;
-  border-bottom: 100px solid #ff858a;
-}
-
-.options {
-  display: flex;
-  gap: 5rem;
-}
-
-.options button {
-  color: #ff3234;
-  font-weight: 600;
-  border-radius: 3px;
-  background: #fad7df;
-  padding: 0.5rem 1rem;
-  border: 1px solid #fe3334;
-  cursor: pointer;
-}
-
-.options button:hover {
-  background: #ff989e;
-  color: white;
-}
-
-.open-cover {
-  transform: rotatex(180deg);
-}
-
-.open-paper {
-  animation: openPaper .5s forwards;
-}
-
-@keyframes openPaper {
-  0% {
-    top: 0;
-  }
-  100% {
-    top: -120px;
-  }
-}
-
-.close-paper {
-  animation: closePaper .5s forwards;
-}
-
-@keyframes closePaper {
-  0% {
-    top: -120px;
-  }
-  100% {
-    top: 0;
-  }
-}
-
-.paloma {
-  display: none;
-  position: absolute;
-  top: 25%;
-  left: 46.5%;
-  margin: auto;
-  font-size: 3rem;
-  color: #fe3334;
-  animation: crecer 1s forwards;
-}
-
-@keyframes crecer {
-  0% {
-    scale: 1;
-    opacity: 1;
-  }
-  100% {
-    scale: 3;
-    opacity: 0;
-  }
-}
-
-/* Estilos para negritas */
-strong {
-  font-weight: bold;
-}
-
-.titulo {
-  font-size: 4rem;
-  font-style: italic;
-  color: #fad7df;
-  text-transform: uppercase;
-  text-align: center;
-}
-
+/* Animación del título */
 .titulo {
   font-size: 4rem;
   font-style: italic;
   color: #FF3335;
   text-transform: uppercase;
   text-align: center;
+  position: relative;
   transition: text-shadow 0.3s ease-in-out;
 }
 
 .titulo:hover {
   text-shadow: 0 0 10px #FF3335, 0 0 20px #FF6666, 0 0 30px #FF9999;
+}
+
+/* Animación del diente saltando entre letras */
+.diente {
+  position: absolute;
+  left: 0;
+  top: -40px;
+  font-size: 2rem;
+  animation: saltarDiente 3s infinite linear;
+}
+
+@keyframes saltarDiente {
+  0%, 100% { left: 0%; }
+  12.5% { left: 12%; }
+  25% { left: 24%; }
+  37.5% { left: 36%; }
+  50% { left: 48%; }
+  62.5% { left: 60%; }
+  75% { left: 72%; }
+  87.5% { left: 84%; }
+  100% { left: 100%; }
 }
