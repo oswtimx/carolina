@@ -166,18 +166,4 @@ strong {
   text-align: center;
 }
 
-.titulo {
-  font-size: 4rem;
-  font-style: italic;
-  text-transform: uppercase;
-  text-align: center;
-  color: #FF3335;
-  opacity: 0;
-  transform: translateY(30px);
-  animation: deslizarElegante 1.5s ease-out forwards;
-}
 
-@keyframes deslizarElegante {
-  0% { opacity: 0; transform: translateY(30px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
