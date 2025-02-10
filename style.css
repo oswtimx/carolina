@@ -132,27 +132,44 @@ main {
   }
 }
 
-/* Estilo para la paloma */
+/* Animación para la paloma */
 .paloma {
   display: none;
   position: absolute;
   top: 25%;
   left: 46.5%;
-  margin: auto;
   font-size: 3rem;
   color: #fe3334;
-  animation: crecer 1s forwards;
+  animation: crecerPaloma 1s forwards;
 }
 
-@keyframes crecer {
+/* Definimos la animación */
+@keyframes crecerPaloma {
   0% {
-    scale: 1;
+    transform: scale(1);
     opacity: 1;
   }
   100% {
-    scale: 3;
+    transform: scale(3);
     opacity: 0;
   }
+}
+
+/* Paloma como forma */
+.paloma::before {
+  content: "🕊️"; /* Aquí es el emoji de la paloma */
+  font-size: 4rem;
+  position: absolute;
+  left: -8px;
+  top: -10px;
+}
+
+.paloma::after {
+  content: "🕊️"; /* Segundo emoji de la paloma */
+  font-size: 4rem;
+  position: absolute;
+  left: 8px;
+  top: -10px;
 }
 
 /* Estilos para negritas */
