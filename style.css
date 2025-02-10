@@ -166,4 +166,17 @@ strong {
   text-align: center;
 }
 
+.titulo {
+  font-size: 4rem;
+  font-style: italic;
+  text-transform: uppercase;
+  text-align: center;
+  color: #FF3335;
+  text-shadow: 0 0 5px rgba(255, 51, 53, 0.5);
+  animation: brilloSuave 3s infinite alternate;
+}
 
+@keyframes brilloSuave {
+  0% { text-shadow: 0 0 5px rgba(255, 51, 53, 0.5); }
+  100% { text-shadow: 0 0 15px rgba(255, 51, 53, 1); }
+}
