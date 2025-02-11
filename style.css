@@ -172,15 +172,9 @@ strong {
   color: #FF3335;
   text-transform: uppercase;
   text-align: center;
-  transition: transform 0.3s ease-in-out;
+  transition: text-shadow 0.3s ease-in-out;
 }
 
 .titulo:hover, .titulo:active {
-  animation: latido 0.6s infinite;
-}
-
-@keyframes latido {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.1); }
-  100% { transform: scale(1); }
+  text-shadow: 0 0 10px #FF3335, 0 0 20px #FF6666, 0 0 30px #FF9999;
 }
